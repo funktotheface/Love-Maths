@@ -69,7 +69,7 @@ function calculateCorrectAnswer() {
   } else if (operator === "-") {
     return [operand1 - operand2, "subtract"];
   } else if (operator === "/") {
-    return [Math.floor(operand1 / operand2), "division"];
+    return [(operand1 / operand2).toFixed(1), "division"];
   } else {
     alert(`Unimplemented operator ${operator}`);
     throw `Unimplemented operator ${operator}. Aborting!`;
